@@ -25,7 +25,8 @@
     "machines": [
       "list-apps",
       "login",
-      "create-app"
+      "create-app",
+      "destroy-app"
     ]
   }
 }
