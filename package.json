@@ -24,7 +24,8 @@
     "machineDir": "machines/",
     "machines": [
       "list-apps",
-      "login"
+      "login",
+      "create-app"
     ]
   }
 }
