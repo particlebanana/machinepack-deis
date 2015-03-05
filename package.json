@@ -27,7 +27,8 @@
       "login",
       "create-app",
       "destroy-app",
-      "set-config"
+      "set-config",
+      "unset-config"
     ]
   }
 }
