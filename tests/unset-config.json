@@ -1,0 +1,10 @@
+{
+  "machine": "unset-config",
+  "expectations": [
+    {
+      "todo": true,
+      "using": {},
+      "outcome": "success"
+    }
+  ]
+}

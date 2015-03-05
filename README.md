@@ -1,4 +1,3 @@
-
 <h1>
   <a href="http://node-machine.org" title="Node-Machine public registry"><img alt="node-machine logo" title="Node-Machine Project" src="http://node-machine.org/images/machine-anthropomorph-for-white-bg.png" width="50" /></a>
   machinepack-deis
@@ -9,7 +8,7 @@
 SDK for working with a Deis install
 
 
-## Installation &nbsp; [![NPM version](https://badge.fury.io/js/machinepack-deis.svg)](http://badge.fury.io/js/machinepack-deis) [![Build Status](https://travis-ci.org/mikermcneil/machinepack-deis.png?branch=master)](https://travis-ci.org/mikermcneil/machinepack-deis)
+## Installation &nbsp; [![NPM version](https://badge.fury.io/js/machinepack-deis.svg)](http://badge.fury.io/js/machinepack-deis) [![Build Status](https://travis-ci.org/particlebanana/machinepack-deis.png?branch=master)](https://travis-ci.org/particlebanana/machinepack-deis)
 
 ```sh
 $ npm install machinepack-deis

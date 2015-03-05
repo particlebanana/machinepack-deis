@@ -1,0 +1,10 @@
+{
+  "machine": "destroy-app",
+  "expectations": [
+    {
+      "todo": true,
+      "using": {},
+      "outcome": "success"
+    }
+  ]
+}

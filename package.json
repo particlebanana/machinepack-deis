@@ -1,6 +1,6 @@
 {
   "name": "machinepack-deis",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "description": "SDK for working with a Deis install",
   "scripts": {
     "test": "node ./node_modules/test-machinepack-mocha/bin/testmachinepack-mocha.js"
@@ -10,7 +10,7 @@
     "machines",
     "machinepack"
   ],
-  "author": "",
+  "author": "Cody Stoltman",
   "license": "MIT",
   "dependencies": {
     "machine": "^3.0.0",
@@ -29,6 +29,11 @@
       "destroy-app",
       "set-config",
       "unset-config"
-    ]
+    ],
+    "testsUrl": "https://travis-ci.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:particlebanana/machinepack-deis.git"
   }
 }
