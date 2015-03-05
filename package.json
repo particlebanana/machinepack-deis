@@ -22,6 +22,8 @@
   "machinepack": {
     "friendlyName": "Deis",
     "machineDir": "machines/",
-    "machines": []
+    "machines": [
+      "login"
+    ]
   }
 }
