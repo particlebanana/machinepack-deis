@@ -23,6 +23,7 @@
     "friendlyName": "Deis",
     "machineDir": "machines/",
     "machines": [
+      "list-apps",
       "login"
     ]
   }
