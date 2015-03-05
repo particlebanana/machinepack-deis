@@ -26,7 +26,8 @@
       "list-apps",
       "login",
       "create-app",
-      "destroy-app"
+      "destroy-app",
+      "set-config"
     ]
   }
 }
