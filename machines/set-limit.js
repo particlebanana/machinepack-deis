@@ -104,12 +104,12 @@ module.exports = {
 
     // Make the HTTP request
     request.post({ url: url, form: body, headers: headers, json: true }, function(err, response, body) {
-      if(err) return exits.error();
+      if(err) return exits.error(err);
 
       var code = response.statusCode;
-      if(!code) return exits.error();
+      if(!code) return exits.error(new Error('Missing status code'));
 
-      if(code > 499) return exits.error();
+      if(code > 499) return exits.error(code);
       if(code > 299) return exits.notAuthenticated();
 
       var values = {};
