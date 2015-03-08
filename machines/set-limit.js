@@ -65,7 +65,7 @@ module.exports = {
       description: 'Successfully set limits.',
       example: {
         memory: '512M',
-        cpu: 1024
+        cpu: 'unlimited'
       }
     },
 
