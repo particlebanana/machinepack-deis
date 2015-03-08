@@ -57,10 +57,9 @@ module.exports = {
 
     success: {
       description: 'Returns the currently set config values.',
-      example: {
-        'DATABASE_URL': 'postgres://localhost:5432',
-        'AWESOME_LEVEL': '100'
-      }
+      example: [{
+        name: 'DATABASE_URL', value: 'postgres://localhost:5432'
+      }]
     },
 
   },
@@ -100,7 +99,10 @@ module.exports = {
       if(code > 499) return exits.error();
       if(code > 299) return exits.notAuthenticated();
 
-      var values = body.values || {};
+      var values = Object.keys(body.values || {}).map(function(key) {
+        return { name: key, value: body.values[key] };
+      });
+
       return exits.success(values);
     });
 

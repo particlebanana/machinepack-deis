@@ -54,6 +54,9 @@ module.exports = {
 
     success: {
       description: 'Successfully removed the environment config',
+      example: [{
+        name: 'DATABASE_URL', value: 'postgres://localhost:5432'
+      }]
     },
 
   },
@@ -90,7 +93,12 @@ module.exports = {
       if(!code) return exits.error();
       if(code > 499) return exits.error();
       if(code > 299) return exits.notAuthenticated();
-      return exits.success();
+
+      var values = Object.keys(body.values || {}).map(function(key) {
+        return { name: key, value: body.values[key] };
+      });
+
+      return exits.success(values);
     });
 
   }
