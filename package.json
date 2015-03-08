@@ -32,7 +32,8 @@
       "create-build",
       "list-processes",
       "scale-process",
-      "set-limit"
+      "set-limit",
+      "unset-limit"
     ],
     "testsUrl": "https://travis-ci.org/"
   },
