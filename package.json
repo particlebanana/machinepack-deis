@@ -29,7 +29,8 @@
       "destroy-app",
       "set-config",
       "unset-config",
-      "create-build"
+      "create-build",
+      "scale"
     ],
     "testsUrl": "https://travis-ci.org/"
   },
