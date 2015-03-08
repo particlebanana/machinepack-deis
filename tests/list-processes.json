@@ -1,0 +1,10 @@
+{
+  "machine": "list-processes",
+  "expectations": [
+    {
+      "todo": true,
+      "using": {},
+      "outcome": "success"
+    }
+  ]
+}
