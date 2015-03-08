@@ -89,7 +89,7 @@ module.exports = {
       if(err) return exits.error(err);
 
       var code = response.statusCode;
-      if(!code) returnew Error('Missing status code')n exits.error(new Error('Missing status code'));
+      if(!code) return exits.error(new Error('Missing status code'));
       if(code > 499) return exits.error(code);
       if(code > 299) return exits.notAuthenticated();
       return exits.success(body);
