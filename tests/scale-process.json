@@ -1,5 +1,5 @@
 {
-  "machine": "scale",
+  "machine": "scale-process",
   "expectations": [
     {
       "todo": true,

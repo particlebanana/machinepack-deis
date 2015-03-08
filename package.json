@@ -30,8 +30,8 @@
       "set-config",
       "unset-config",
       "create-build",
-      "scale"
       "list-processes",
+      "scale-process"
     ],
     "testsUrl": "https://travis-ci.org/"
   },

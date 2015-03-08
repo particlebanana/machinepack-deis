@@ -1,7 +1,7 @@
 module.exports = {
 
 
-  friendlyName: 'Scale',
+  friendlyName: 'Scale process',
 
 
   description: 'Scales an application\'s processes by type.',
