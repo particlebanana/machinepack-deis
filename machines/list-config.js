@@ -1,10 +1,10 @@
 module.exports = {
 
 
-  friendlyName: 'List limits',
+  friendlyName: 'List config',
 
 
-  description: 'Lists resource limits for an application.',
+  description: 'Lists environment variables for an application.',
 
 
   extendedDescription: '',
@@ -48,10 +48,9 @@ module.exports = {
 
     success: {
       description: 'Successfully set limits.',
-      example: {
-        memory: '512M',
-        cpu: 'unlimited'
-      }
+      example: [{
+        name: 'DATABASE_URL', value: 'postgres://localhost:5432'
+      }]
     }
 
   },
@@ -80,9 +79,9 @@ module.exports = {
       if(code > 499) return exits.error();
       if(code > 299) return exits.notAuthenticated();
 
-      var values = {};
-      values.memory = body.memory && body.memory.memory || 'unlimited';
-      values.cpu = body.cpu && body.cpu.cpu || 'unlimited';
+      var values = Object.keys(body.values || {}).map(function(key) {
+        return { name: key, value: body.values[key] };
+      });
 
       return exits.success(values);
     });

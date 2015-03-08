@@ -34,7 +34,8 @@
       "scale-process",
       "set-limit",
       "unset-limit",
-      "list-limits"
+      "list-limits",
+      "list-config"
     ],
     "testsUrl": "https://travis-ci.org/"
   },
