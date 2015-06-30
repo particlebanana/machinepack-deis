@@ -1,6 +1,6 @@
 {
   "name": "machinepack-deis",
-  "version": "0.4.2",
+  "version": "0.5.0",
   "description": "SDK for working with a Deis install",
   "scripts": {
     "test": "node ./node_modules/test-machinepack-mocha/bin/testmachinepack-mocha.js"
